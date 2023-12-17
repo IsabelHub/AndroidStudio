@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">songsChristmas</string>
+    <string name="app_name">Songs Christmas</string>
+    <string name="pais1">España</string>
+    <string name="pais2">Persea americana</string>
+    <string name="pais3">Alamo</string>
+    <string name="pais4">Populus alba</string>
+    <string name="pais5">Albaricoque</string>
+    <string name="pais6">Prunus armeniaca</string>
+    <string name="pais7">Anturio</string>
+    <string name="pais8">Anthurium andraeanum</string>
+    <string name="pais9">Bambu</string>
 </resources>
