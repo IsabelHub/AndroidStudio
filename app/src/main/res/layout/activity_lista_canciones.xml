@@ -1,75 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoCanciones"
-    tools:context=".ListaCanciones">
+    android:background="@drawable/rojo"
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/cancion1"
-        android:layout_width="114dp"
-        android:layout_height="54dp"
+        android:id="@+id/botonCancion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="España"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="46dp" />
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
-        android:id="@+id/cancion6"
-        android:layout_width="103dp"
-        android:layout_height="44dp"
-        android:text="Suecia"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="505dp" />
-
-    <Button
-        android:id="@+id/cancion4"
-        android:layout_width="128dp"
-        android:layout_height="51dp"
-        android:text="Eslovaquia"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="331dp" />
-
-    <Button
-        android:id="@+id/cancion5"
-        android:layout_width="103dp"
-        android:layout_height="49dp"
-        android:text="Hungria"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <Button
-        android:id="@+id/cancion7"
-        android:layout_width="111dp"
-        android:layout_height="53dp"
-        android:text="Austria"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="584dp" />
-
-    <Button
-        android:id="@+id/cancion3"
-        android:layout_width="112dp"
-        android:layout_height="80dp"
-        android:text="Republica Checa"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="223dp" />
-
-    <Button
-        android:id="@+id/cancion8"
-        android:layout_width="103dp"
-        android:layout_height="49dp"
-        android:text="Libano"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="666dp" />
-
-    <Button
-        android:id="@+id/cancion2"
-        android:layout_width="125dp"
-        android:layout_height="53dp"
+        android:id="@+id/botonCancion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Italia"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="134dp" />
+        android:layout_below="@id/botonCancion1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Republica Checa"
+        android:layout_below="@id/botonCancion2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eslovaquia"
+        android:layout_below="@id/botonCancion3"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hungria"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/botonCancion4"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suecia"
+        android:layout_below="@id/botonCancion5"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Austria"
+        android:layout_below="@id/botonCancion6"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
+    <Button
+        android:id="@+id/botonCancion8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libano"
+        android:layout_below="@id/botonCancion7"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
