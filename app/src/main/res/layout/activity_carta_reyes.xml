@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/santaclaus"
     tools:context=".CartaReyes">
-
-
     <TextView
         android:id="@+id/textCarta"
         android:layout_width="320dp"
         android:layout_height="82dp"
         android:layout_marginTop="56dp"
         android:text="Escribe, con tus mejores deseos, la carta a Santa Claus: "
-        android:textSize="20sp"
+        android:textAlignment="center"
         android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,12 +42,17 @@
         android:layout_width="191dp"
         android:layout_height="91dp"
         android:layout_gravity="bottom|left"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="16dp"
-        android:text="Enviar carta a la Ponia"
+        android:layout_marginTop="209dp"
+        android:background="@drawable/plane"
+        android:text="Enviar carta a Laponia"
         android:textColor="@color/black"
-        android:background="@color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTexto"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

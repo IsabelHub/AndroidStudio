@@ -25,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="Bienvenido a songsChristmas"
-
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="italic"
