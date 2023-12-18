@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/carta"
+    android:background="@drawable/santaclaus"
     tools:context=".CartaReyes">
 
 
     <TextView
         android:id="@+id/textCarta"
-        android:layout_width="290dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="152dp"
-        android:background="#FFCFADBF"
-        android:text=" Escribe con tus mejores deseos la siguiente carta: "
+        android:layout_width="320dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="56dp"
+        android:text="Escribe, con tus mejores deseos, la carta a Santa Claus: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,17 +26,17 @@
         android:layout_width="316dp"
         android:layout_height="176dp"
         android:autofillHints=""
-        android:background="#FFDAC5C5"
-        android:hint="   Querido Santa:"
+        android:hint="Querido Santa:"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColorHint="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textCarta"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.28" />
 
     <Button
         android:id="@+id/botonRecicler1"
@@ -43,13 +44,11 @@
         android:layout_height="91dp"
         android:layout_gravity="bottom|left"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="92dp"
-        android:background="#BD3D3D"
-        android:text="Enviar a la Ponia"
-        android:textColor="#FF120909"
-
+        android:layout_marginBottom="16dp"
+        android:text="Enviar carta a la Ponia"
+        android:textColor="@color/black"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

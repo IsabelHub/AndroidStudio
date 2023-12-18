@@ -6,13 +6,15 @@
     android:background="@drawable/rojo"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/botonCancion1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="España"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
+        android:onClick="openYouTubeVideo"
         />
 
     <Button
@@ -21,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Italia"
         android:layout_below="@id/botonCancion1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
     <Button
@@ -30,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="Republica Checa"
         android:layout_below="@id/botonCancion2"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
     <Button
@@ -39,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Eslovaquia"
         android:layout_below="@id/botonCancion3"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
     <Button
@@ -47,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hungria"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/botonCancion4"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
@@ -57,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Suecia"
         android:layout_below="@id/botonCancion5"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
     <Button
@@ -66,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="Austria"
         android:layout_below="@id/botonCancion6"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
     <Button
@@ -75,7 +77,7 @@
         android:layout_height="wrap_content"
         android:text="Libano"
         android:layout_below="@id/botonCancion7"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:onClick="openYouTubeVideo" />
 
