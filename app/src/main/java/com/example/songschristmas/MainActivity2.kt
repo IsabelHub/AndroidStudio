@@ -6,29 +6,44 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.songschristmas.adapter.songsAdapter
+import com.example.songschristmas.databinding.ActivityMain2Binding
+import com.example.songschristmas.databinding.ActivityMain3Binding
+
 
 class MainActivity2 : AppCompatActivity() {
+    private lateinit var binding: ActivityMain3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+
+        binding = ActivityMain3Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        mostrarNombre()
         iniciarRecyclerView()
-        val botonVillancicos: Button = findViewById(R.id.botonPais)
-        botonVillancicos.setOnClickListener { cambioaBroma()}
+        val botonListado: Button = findViewById(R.id.botonRecicler)
+        botonListado.setOnClickListener{ cambioVistas()}
 
     }
-    fun iniciarRecyclerView() {
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerPaises)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = PlantaAdapter(PlantaProvider.plantaList)
+    fun mostrarNombre()
+    {
+        val bundle = intent.extras
+        val nombre = bundle?.getString("Nombre")
+        binding.nombreUsuario.text="Bienvenido, has llegado bien $nombre"
+
     }
-    fun cambioaBroma() {
-        val cambioPantalla = Intent(this, ActividadFinal2::class.java)
+
+    fun iniciarRecyclerView() {
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerPais)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = songsAdapter(songsProvider.villancicosList)
+    }
+
+    fun cambioVistas() {
+        val cambioPantalla = Intent(this, MainActivity::class.java)
         startActivity(cambioPantalla)
     }
-
-
-
-
 
 
 }

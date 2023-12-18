@@ -5,12 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <!--item para que no ocupe toda la pantalla ponemos layout_height=wrap_content-->
+
+
     <ImageView
         android:id="@+id/imagenPais"
         android:layout_width="158dp"
         android:layout_height="136dp"
-        android:background ="@color/black"
+        android:background="@color/black"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -18,11 +21,15 @@
         android:id="@+id/nombrePais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/bttPais"
+
+        android:layout_marginEnd="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imagenPais"
+
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Nombre" />
 
@@ -30,8 +37,17 @@
         android:id="@+id/bttPais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="72dp"
-        android:text="Villancico"/>
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="120dp"
+        android:background="#FF33691E"
+        android:clickable="true"
+        android:gravity="bottom|center_horizontal"
+        android:text="Villancicos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imagenPais"
+        app:layout_constraintTop_toBottomOf="@+id/nombrePais"
+        app:layout_constraintVertical_bias="0.515" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
