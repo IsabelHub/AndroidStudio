@@ -19,14 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
-    <EditText
+    <TextView
         android:id="@+id/welcome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="Bienvenido a songsChristmas"
-        android:textAlignment="gravity"
+
+        android:textAlignment="center"
+        android:textSize="20dp"
         android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/imagenWelcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +47,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        app:layout_constraintTop_toBottomOf="@id/welcome"/>
 
     <EditText
         android:id="@+id/usuario"
@@ -64,6 +68,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="80dp"
         android:text="Login"
+        app:layout_constraintTop_toBottomOf="@id/usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.566"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity2">
 
     <TextView
         android:id="@+id/nombreUsuario"
@@ -27,26 +27,41 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerPais"
         android:layout_width="match_parent"
-        android:layout_height="620dp"
+        android:layout_height="580dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/botonRecicler"
+        app:layout_constraintBottom_toTopOf="@+id/botonRecicler1"
         app:layout_constraintTop_toBottomOf="@+id/nombreUsuario"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/botonRecicler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
+        android:id="@+id/botonRecicler1"
+        android:layout_width="191dp"
+        android:layout_height="91dp"
+        android:layout_gravity="bottom|left"
         android:background="#FF33691E"
         android:clickable="true"
         android:text="Vuelve Atras"
         android:textColor="#FF120909"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/botonRecicler2"
         app:layout_constraintTop_toBottomOf="@+id/recyclerPais" />
+
+    <Button
+        android:id="@+id/botonRecicler2"
+        android:layout_width="221dp"
+        android:layout_height="89dp"
+        android:layout_gravity="bottom|right"
+        android:background="#FF33691E"
+        android:clickable="true"
+        android:text="Lista Villancicos"
+        android:textColor="#FF120909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/botonRecicler1"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerPais" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

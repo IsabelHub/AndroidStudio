@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Songs Christmas</string>
-    <string name="pais1">España</string>
-    <string name="pais2">Italia</string>
-    <string name="pais3">Republica Checa</string>
-    <string name="pais4">Eslovaquia</string>
-    <string name="pais5">Hungria</string>
-    <string name="pais6">Suecia</string>
-    <string name="pais7">Austria</string>
-    <string name="pais8">Libano</string>
+    <string name="pais1">España Capital: Madrid</string>
+    <string name="pais2">Italia Capital: Roma </string>
+    <string name="pais3">Republica Checa Capital: Praga</string>
+    <string name="pais4">Eslovaquia Capital: Bratislava  </string>
+    <string name="pais5">Hungria Capital: Budapest</string>
+    <string name="pais6">Suecia Capital: Oslo</string>
+    <string name="pais7">Austria Capital: Viena</string>
+    <string name="pais8">Libano Capital: Beirut</string>
+
 </resources>

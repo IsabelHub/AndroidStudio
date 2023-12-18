@@ -11,7 +11,7 @@ class songsViewHolder(view: View):ViewHolder(view){
 
     val imagen: ImageView = view.findViewById(R.id.imagenPais)
     val nombre: TextView = view.findViewById(R.id.nombrePais)
-    val botonEnlace: TextView = view.findViewById(R.id.bttPais)
+
 
 
 }

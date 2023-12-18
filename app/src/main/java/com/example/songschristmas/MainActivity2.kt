@@ -22,8 +22,8 @@ class MainActivity2 : AppCompatActivity() {
 
         mostrarNombre()
         iniciarRecyclerView()
-        val botonListado: Button = findViewById(R.id.botonRecicler)
-        botonListado.setOnClickListener{ cambioVistas()}
+        val botonListado: Button = findViewById(R.id.botonRecicler1)
+        botonListado.setOnClickListener{ cambioVistaAtras()}
 
     }
     fun mostrarNombre()
@@ -31,19 +31,20 @@ class MainActivity2 : AppCompatActivity() {
         val bundle = intent.extras
         val nombre = bundle?.getString("Nombre")
         binding.nombreUsuario.text="Bienvenido, has llegado bien $nombre"
-
     }
-
     fun iniciarRecyclerView() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerPais)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = songsAdapter(songsProvider.villancicosList)
     }
-
-    fun cambioVistas() {
+    fun cambioVistaAtras() {
         val cambioPantalla = Intent(this, MainActivity::class.java)
         startActivity(cambioPantalla)
     }
 
+    fun cambioVistaDelante() {
+        val cambioPantalla = Intent(this, CartaReyes::class.java)
+        startActivity(cambioPantalla)
+    }
 
 }
