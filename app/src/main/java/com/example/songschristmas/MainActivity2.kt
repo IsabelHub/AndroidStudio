@@ -22,8 +22,11 @@ class MainActivity2 : AppCompatActivity() {
 
         mostrarNombre()
         iniciarRecyclerView()
-        val botonListado: Button = findViewById(R.id.botonRecicler1)
-        botonListado.setOnClickListener{ cambioVistaAtras()}
+        val botonAtras: Button = findViewById(R.id.botonRecicler1)
+        botonAtras.setOnClickListener{ cambioVistaAtras()}
+
+        val botonVillancios: Button = findViewById(R.id.botonRecicler2)
+        botonVillancios.setOnClickListener{ cambioVistaDelante()}
 
     }
     fun mostrarNombre()
@@ -43,8 +46,8 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     fun cambioVistaDelante() {
-        val cambioPantalla = Intent(this, CartaReyes::class.java)
-        startActivity(cambioPantalla)
+        val cambioPantalla2 = Intent(this, CartaReyes::class.java)
+        startActivity(cambioPantalla2)
     }
 
 }
