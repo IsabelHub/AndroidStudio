@@ -13,7 +13,6 @@ class songsAdapter(private val songsList: List<SongsChristmas>) :
         val layoutInflater = LayoutInflater.from(parent.context)
         return songsViewHolder(layoutInflater.inflate(R.layout.activity_main2, parent, false))
     }
-
     override fun getItemCount(): Int {
         return songsList.size
     }
@@ -22,7 +21,5 @@ class songsAdapter(private val songsList: List<SongsChristmas>) :
 
         holder.imagen.setImageResource(item.imageResourceId)
         holder.nombre.setText(item.stringResourceId1)
-        //holder.botonEnlace.setText(item/.stringResourceId2)
-
     }
 }
